@@ -6,10 +6,10 @@ export async function initToken(
   address: string,
   code: number
 ) {
-  const initial_balances: Cw20Coin[] = [{ address, amount: "123456000000" }];
+  const initial_balances: Cw20Coin[] = [{ address, amount: "4200000000" }];
   const initMsg: InstantiateMsg = {
-    name: "Test Token",
-    symbol: "TTOKEN",
+    name: "cryptopunk4201 token",
+    symbol: "PUNK",
     decimals: 6,
     initial_balances,
     mint: {
@@ -23,7 +23,7 @@ export async function initToken(
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     initMsg,
-    "Test Token 1.0",
+    "punk's not dead",
     "auto",
     {
       admin: address,
